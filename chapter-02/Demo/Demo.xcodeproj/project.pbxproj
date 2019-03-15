@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3FC5C9E6D685F560ADD0CDEB /* libPods-DGCallTrace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7879D01649387B3B8810D901 /* libPods-DGCallTrace.a */; };
+		844712ED223BDAE20029BF3F /* DGCallTrace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D009FB223B2C9F007F0FBD /* DGCallTrace.framework */; };
 		84D009E2223B2A7C007F0FBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D009E1223B2A7C007F0FBD /* AppDelegate.m */; };
 		84D009E5223B2A7C007F0FBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D009E4223B2A7C007F0FBD /* ViewController.m */; };
 		84D009E8223B2A7C007F0FBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D009E6223B2A7C007F0FBD /* Main.storyboard */; };
@@ -15,38 +16,12 @@
 		84D009ED223B2A7D007F0FBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D009EB223B2A7D007F0FBD /* LaunchScreen.storyboard */; };
 		84D009F0223B2A7D007F0FBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D009EF223B2A7D007F0FBD /* main.m */; };
 		84D009FF223B2C9F007F0FBD /* DGCallTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 84D009FD223B2C9F007F0FBD /* DGCallTrace.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84D00A02223B2C9F007F0FBD /* DGCallTrace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D009FB223B2C9F007F0FBD /* DGCallTrace.framework */; };
-		84D00A03223B2C9F007F0FBD /* DGCallTrace.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84D009FB223B2C9F007F0FBD /* DGCallTrace.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84D00A0F223B2D5F007F0FBD /* DGRecord.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84D00A0D223B2D5F007F0FBD /* DGRecord.cpp */; };
 		84D00A10223B2D5F007F0FBD /* DGRecord.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 84D00A0E223B2D5F007F0FBD /* DGRecord.hpp */; };
 		84D00A17223B2E5B007F0FBD /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 84D00A15223B2E5B007F0FBD /* fishhook.h */; };
 		84D00A18223B2E5B007F0FBD /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 84D00A16223B2E5B007F0FBD /* fishhook.c */; };
 		9BCD5470384E099E1ACCE9B1 /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91971E9BF46C1196648A4A41 /* libPods-Demo.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		84D00A00223B2C9F007F0FBD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84D009D5223B2A7C007F0FBD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 84D009FA223B2C9F007F0FBD;
-			remoteInfo = DGCallTrace;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		84D00A07223B2C9F007F0FBD /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				84D00A03223B2C9F007F0FBD /* DGCallTrace.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		29D6EDF826435DC7B44D6588 /* Pods-DGCallTrace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DGCallTrace.release.xcconfig"; path = "Target Support Files/Pods-DGCallTrace/Pods-DGCallTrace.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,8 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844712ED223BDAE20029BF3F /* DGCallTrace.framework in Frameworks */,
 				9BCD5470384E099E1ACCE9B1 /* libPods-Demo.a in Frameworks */,
-				84D00A02223B2C9F007F0FBD /* DGCallTrace.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,12 +171,10 @@
 				84D009D9223B2A7C007F0FBD /* Sources */,
 				84D009DA223B2A7C007F0FBD /* Frameworks */,
 				84D009DB223B2A7C007F0FBD /* Resources */,
-				84D00A07223B2C9F007F0FBD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				84D00A01223B2C9F007F0FBD /* PBXTargetDependency */,
 			);
 			name = Demo;
 			productName = Demo;
@@ -351,14 +324,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		84D00A01223B2C9F007F0FBD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 84D009FA223B2C9F007F0FBD /* DGCallTrace */;
-			targetProxy = 84D00A00223B2C9F007F0FBD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		84D009E6223B2A7C007F0FBD /* Main.storyboard */ = {
