@@ -1,0 +1,8 @@
+
+target 'Demo' do
+  pod 'Masonry'
+end
+
+target 'DGCallTrace' do
+#  pod 'fishhook'
+end
